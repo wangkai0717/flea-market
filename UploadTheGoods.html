@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传商品</title>
+    <link type="text/css" rel="stylesheet" href="css/UploadTheGoods.css"/>
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/jquery-ui.min.css"/>
+    <script src="js/UploadTheGoods.js"></script>
+</head>
+<body>
+    <div id="nav_top" >
+        <p class="title"><a href="flea_market.html"><strong>M</strong>东秦二手市场</a></p>
+        <ul class="nav_left">
+            <li><a href="#">发现</a> </li>
+            <li><a href="#">圈子</a> </li>
+            <li><a href="#">最新</a> </li>
+        </ul>
+        <a class="head" href="#" target="_blank">景弟</a>
+    </div>
+    <div id="content">
+        <span class="content_title"><p>上传商品</p></span>
+        <div id="pickpic">
+            <form id="imgUpload" enctype="multipart/form-data" method="post">
+                <p class="white">图片上传：</p>
+                <div style="width: 200px;height: 200px; margin-left: 80px" >
+                    <table>
+                        <tr>
+                            <td style="width: 200px;"><img alt="图片1" src="" width="200px" height="200px" border="1px solid black" ;>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <input id="imgPath"  name="imgPath" type="file" />
+                <input id="imgsub"  type="button" style="color:black" value="上传">
+            </form>
+        </div>
+        <div id="info">
+        <form id="info2" name="form" action="#"  onsubmit="" method='post'  target="_blank">
+            <label for="pclass"> <p class="white">商品分类:</p>
+            </label>
+            <select id="pclass"  name="pclass">
+                <option>中性笔</option><option>文具笔袋</option><option>计算器</option><option>订书机</option><option>听力耳机</option><option>书包</option>
+                <option>记事本</option><option>U盘硬盘</option><option>床上桌</option><option>衣架</option><option>蚊帐</option><option>扫把</option>
+                <option>洗衣盆</option><option>浴筐</option><option>雨伞</option><option>风扇</option><option>吉他</option><option>旅行箱包</option><option>相机</option>
+                <option>书本</option><option>眼镜</option><option>手表</option><option>坐垫</option><option>模型</option><option>台灯</option><option>其他</option>
+            </select><br/>
+            <p class="white">商品名称:</p><input type="text" name="username">
+                <span class='state1'>请输入商品名称</span><br/>
+            <p class="white">商品描述:</p><input type="text" name="describe">
+                <span class='state1'>请输入商品描述</span><br/>
+            <p class="white">地　　址:</p><input type="text" name="address">
+                <span class='state1'>请输入您的地址</span><br/>
+            <p class="white"> 售　　价:</p><input type="text" name="pay">
+                <span class='state1'>请输入商品售价</span><br/>
+
+            <button class="imgsub" type="submit" style="color:black;">发布</button>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
